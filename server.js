@@ -51,6 +51,12 @@ app.get('/bad', (req, res) => {
     });
 });
 
+app.get('/Good', (req, res) => {
+    res.send({
+        errorMessage: 'handle request'
+    });
+});
+
 app.listen(3000, () => {
     console.log('Server is up on port 3000');
 });
